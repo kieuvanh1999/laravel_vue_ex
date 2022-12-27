@@ -3,6 +3,9 @@ import { createPinia } from 'pinia'
 import router from './router.js'
 import axios from 'axios';
 import { 
+    Input,
+    Select,
+    Avatar,
     Table,
     Card,
     List,
@@ -23,8 +26,11 @@ window.axios = axios;
 const app = createApp(App)
 app.use(createPinia());
 app.use(router);
+app.use(Avatar);
+app.use(Select);
 app.use(Button);
 app.use(Drawer);
+app.use(Input)
 app.use(List);
 app.use(Menu);
 app.use(Card);

@@ -4,5 +4,5 @@
         <RouterLink to="/login">Login</RouterLink> -
         <RouterLink to="/register">Register</RouterLink> -
         <router-link to="/apicalling">Api Calling</router-link> -
-        <router-link to="/admin">Admin Page</router-link>
+        <router-link :to="{ name: 'admin-users' }">Admin Page</router-link>
 </template>
