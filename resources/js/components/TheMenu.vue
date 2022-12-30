@@ -37,17 +37,17 @@
     </a-menu>
 </template>
 <script>
-    import { UserOutlined,TagOutlined,SettingOutlined} from '@ant-design/icons-vue';
+    import { UserOutlined,TagOutlined,SettingOutlined } from '@ant-design/icons-vue';
     import { defineComponent } from 'vue';
     import { storeToRefs } from 'pinia';
     import { useMenu } from '../stores/use-menu.js';
 
     export default defineComponent({
-    components: {
-    UserOutlined,
-    TagOutlined,
-    SettingOutlined,
-},
+        components: {
+        UserOutlined,
+        TagOutlined,
+        SettingOutlined,
+    },
     setup() {
         const store = useMenu(); 
 

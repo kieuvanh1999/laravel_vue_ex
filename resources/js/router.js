@@ -35,12 +35,18 @@ const routes = [
             {
                 path: "users",
                 name: "admin-users",
-                component: () => import ("./pages/admin/users/index.vue")
+                component: () => import ("./pages/admin/users/index.vue"),
+            
             },
             {
                 path: "users/create",
                 name: "admin-users-create",
                 component: () => import ("./pages/admin/users/create.vue")
+            },
+            {
+                path: "users/:id/edit",
+                name: "admin-edit-users",
+                component: () => import ("./pages/admin/users/edit.vue")
             },
             {
                 path: "roles",
