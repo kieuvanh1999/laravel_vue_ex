@@ -3,6 +3,7 @@ import { createPinia } from 'pinia'
 import router from './router.js'
 import axios from 'axios';
 import { 
+    Checkbox,
     Input,
     Select,
     Avatar,
@@ -27,6 +28,7 @@ const app = createApp(App)
 app.use(createPinia());
 app.use(router);
 app.use(Avatar);
+app.use(Checkbox);
 app.use(Select);
 app.use(Button);
 app.use(Drawer);
